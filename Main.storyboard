@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1192">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller3-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Add" id="BYZ-38-t0r" customClass="ViewController3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="DateOut" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20">
+                                <rect key="frame" x="70" y="55" width="144" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="160011"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Destination:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="36">
+                                <rect key="frame" x="70" y="131" width="473" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="473" id="160017"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Plane Type:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37">
+                                <rect key="frame" x="70" y="245" width="157" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="163927"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="changed:" destination="BYZ-38-t0r" id="210759" eventType="editingChanged"/>
+                                    <action selector="changed:" destination="BYZ-38-t0r" id="211440" eventType="valueChanged"/>
+                                    <action selector="changed:" destination="BYZ-38-t0r" id="212121" eventType="editingDidEnd"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hobbs In:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="38">
+                                <rect key="frame" x="70" y="285" width="152" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="163930"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="HobbsOutDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="2191"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cash Spent:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="44">
+                                <rect key="frame" x="70" y="169" width="144" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="163921"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total Hobbs:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="135">
+                                <rect key="frame" x="71" y="361" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="165166"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lease Name:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="148">
+                                <rect key="frame" x="71" y="437" width="235" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="168636"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="285" placeholder="Flight Type">
+                                <rect key="frame" x="71" y="475" width="235" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="168640"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Passenger Name:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="427">
+                                <rect key="frame" x="70" y="207" width="202" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="202" id="163924"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="changed:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="95379"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="134543">
+                                <rect key="frame" x="70" y="537" width="132" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="169863"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="4" height="4"/>
+                                <state key="normal" title="Review Passengers"/>
+                                <connections>
+                                    <action selector="PassengerButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="136642"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="134549">
+                                <rect key="frame" x="71" y="512" width="104" height="30"/>
+                                <state key="normal" title="Add Passenger">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="AddButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="136643"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="DateIn" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="135269">
+                                <rect key="frame" x="70" y="93" width="144" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="160014"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pilot" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="69">
+                                <rect key="frame" x="71" y="399" width="216" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="165782"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="157533">
+                                <rect key="frame" x="22" y="-277" width="536" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="708">
+                                        <rect key="frame" x="0.0" y="0.0" width="536" height="44"/>
+                                        <items>
+                                            <navigationItem id="709">
+                                                <barButtonItem key="leftBarButtonItem" title="Save" id="86915">
+                                                    <connections>
+                                                        <action selector="SaveButton_Activated:" destination="BYZ-38-t0r" id="86916"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                                <barButtonItem key="rightBarButtonItem" title="Cancel" id="86917">
+                                                    <connections>
+                                                        <action selector="CancelButton_Activated:" destination="BYZ-38-t0r" id="86918"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hobbs Out" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="158161">
+                                <rect key="frame" x="71" y="323" width="153" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="163933"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="HobbsOutDidEnd:" destination="BYZ-38-t0r" id="206219" eventType="editingDidEnd"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="158778">
+                                <rect key="frame" x="70" y="20" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="169243"/>
+                                </constraints>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SaveButton2_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="169864"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="158779">
+                                <rect key="frame" x="141" y="20" width="61" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="169249"/>
+                                </constraints>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CancelButton2_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="169865"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="20" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="160009"/>
+                            <constraint firstItem="20" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="55" id="160010"/>
+                            <constraint firstItem="135269" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="160012"/>
+                            <constraint firstItem="135269" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="93" id="160013"/>
+                            <constraint firstAttribute="trailing" secondItem="36" secondAttribute="trailing" constant="57" id="160015"/>
+                            <constraint firstItem="36" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="131" id="160016"/>
+                            <constraint firstItem="36" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="160628"/>
+                            <constraint firstItem="44" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="163919"/>
+                            <constraint firstItem="44" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="169" id="163920"/>
+                            <constraint firstItem="427" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="163922"/>
+                            <constraint firstItem="427" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="207" id="163923"/>
+                            <constraint firstItem="37" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="163925"/>
+                            <constraint firstItem="37" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="245" id="163926"/>
+                            <constraint firstItem="38" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="163928"/>
+                            <constraint firstItem="158161" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="71" id="163931"/>
+                            <constraint firstItem="38" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="164548"/>
+                            <constraint firstItem="158161" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="303" id="165163"/>
+                            <constraint firstItem="135" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="341" id="165164"/>
+                            <constraint firstItem="135" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="165165"/>
+                            <constraint firstItem="69" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="379" id="165779"/>
+                            <constraint firstItem="69" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="165781"/>
+                            <constraint firstItem="148" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="71" id="168634"/>
+                            <constraint firstItem="148" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="417" id="168637"/>
+                            <constraint firstItem="285" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="71" id="168638"/>
+                            <constraint firstItem="285" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="455" id="168641"/>
+                            <constraint firstItem="134549" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="71" id="168642"/>
+                            <constraint firstItem="134549" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="492" id="168644"/>
+                            <constraint firstItem="158778" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="169240"/>
+                            <constraint firstItem="158778" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="169244"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="158778" secondAttribute="trailing" constant="464" id="169245"/>
+                            <constraint firstItem="158779" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="169246"/>
+                            <constraint firstItem="158779" firstAttribute="centerX" secondItem="427" secondAttribute="centerX" id="169247"/>
+                            <constraint firstItem="134543" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="169860"/>
+                            <constraint firstItem="134543" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="517" id="169862"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AddButton" destination="134549" id="name-outlet-134549"/>
+                        <outlet property="CancelButton2" destination="158779" id="name-outlet-158779"/>
+                        <outlet property="CashSpentTextField" destination="44" id="name-outlet-44"/>
+                        <outlet property="DateInTextField" destination="135269" id="name-outlet-135269"/>
+                        <outlet property="DateOutTextField" destination="20" id="name-outlet-20"/>
+                        <outlet property="DestinationTextField" destination="36" id="name-outlet-36"/>
+                        <outlet property="HobbsTotalTextField" destination="135" id="name-outlet-135"/>
+                        <outlet property="PlaneTypeTextField" destination="37" id="name-outlet-37"/>
+                        <outlet property="HobbsInTextField" destination="38" id="name-outlet-38"/>
+                        <outlet property="HobbsOutTextField" destination="158161" id="name-outlet-158161"/>
+                        <outlet property="MainStoryBoard" destination="8bC-Xf-vdC" id="name-outlet-8bC-Xf-vdC"/>
+                        <outlet property="PassengerButton" destination="134543" id="name-outlet-134543"/>
+                        <outlet property="passengerAddTextField" destination="427" id="name-outlet-427"/>
+                        <outlet property="SaveButton2" destination="158778" id="name-outlet-158778"/>
+                        <outlet property="cancelButton" destination="86917" id="name-outlet-86917"/>
+                        <outlet property="leaseTextField" destination="148" id="name-outlet-148"/>
+                        <outlet property="pilotTextField" destination="69" id="name-outlet-69"/>
+                        <outlet property="saveButton" destination="86915" id="name-outlet-86915"/>
+                        <outlet property="FlightTypeTextField" destination="285" id="name-outlet-285"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-522.4" y="-325.1874"/>
+        </scene>
+        <!--Passenger View Controller-->
+        <scene sceneID="163">
+            <objects>
+                <viewController storyboardIdentifier="PassengerView" id="164" customClass="PassengerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="161"/>
+                        <viewControllerLayoutGuide type="bottom" id="162"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="165">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 1:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="267">
+                                <rect key="frame" x="8" y="26" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 2:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="274">
+                                <rect key="frame" x="166" y="26" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 3:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="275">
+                                <rect key="frame" x="8" y="64" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 4:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="280">
+                                <rect key="frame" x="166" y="64" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 5:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="281">
+                                <rect key="frame" x="8" y="102" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 6:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="282">
+                                <rect key="frame" x="166" y="102" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 7:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="283">
+                                <rect key="frame" x="8" y="140" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 8:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="284">
+                                <rect key="frame" x="166" y="140" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 9:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="292">
+                                <rect key="frame" x="8" y="178" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 10:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="296">
+                                <rect key="frame" x="166" y="178" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 11:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="297">
+                                <rect key="frame" x="8" y="216" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 12:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="298">
+                                <rect key="frame" x="166" y="216" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 13:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="299">
+                                <rect key="frame" x="8" y="254" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 14:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="300">
+                                <rect key="frame" x="166" y="254" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 15:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="303">
+                                <rect key="frame" x="8" y="292" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 16:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="308">
+                                <rect key="frame" x="166" y="292" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 17:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="309">
+                                <rect key="frame" x="8" y="330" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 18:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="310">
+                                <rect key="frame" x="166" y="330" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 19:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="311">
+                                <rect key="frame" x="8" y="368" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 20:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="312">
+                                <rect key="frame" x="166" y="368" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 21:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="313">
+                                <rect key="frame" x="8" y="406" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 23:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="314">
+                                <rect key="frame" x="8" y="444" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 22:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="315">
+                                <rect key="frame" x="166" y="406" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger 24:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="316">
+                                <rect key="frame" x="166" y="444" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="317">
+                                <rect key="frame" x="119" y="505" width="90" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="OkButton_TouchUpInside:" destination="164" eventType="touchUpInside" id="342"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="338"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="PassengerView" destination="165" id="name-outlet-165"/>
+                        <outlet property="okButton" destination="317" id="name-outlet-317"/>
+                        <outlet property="passenger10TextField" destination="296" id="name-outlet-296"/>
+                        <outlet property="passenger11TextField" destination="297" id="name-outlet-297"/>
+                        <outlet property="passenger12TextField" destination="298" id="name-outlet-298"/>
+                        <outlet property="passenger13TextField" destination="299" id="name-outlet-299"/>
+                        <outlet property="passenger14TextField" destination="300" id="name-outlet-300"/>
+                        <outlet property="passenger15TextField" destination="303" id="name-outlet-303"/>
+                        <outlet property="passenger16TextField" destination="308" id="name-outlet-308"/>
+                        <outlet property="passenger17TextField" destination="309" id="name-outlet-309"/>
+                        <outlet property="passenger18TextField" destination="310" id="name-outlet-310"/>
+                        <outlet property="passenger19TextField" destination="311" id="name-outlet-311"/>
+                        <outlet property="passenger1TextField" destination="267" id="name-outlet-267"/>
+                        <outlet property="passenger20TextField" destination="312" id="name-outlet-312"/>
+                        <outlet property="passenger21TextField" destination="313" id="name-outlet-313"/>
+                        <outlet property="passenger22TextField" destination="315" id="name-outlet-315"/>
+                        <outlet property="passenger23TextField" destination="314" id="name-outlet-314"/>
+                        <outlet property="passenger24TextField" destination="316" id="name-outlet-316"/>
+                        <outlet property="passenger2TextField" destination="274" id="name-outlet-274"/>
+                        <outlet property="passenger3TextField" destination="275" id="name-outlet-275"/>
+                        <outlet property="passenger4TextField" destination="280" id="name-outlet-280"/>
+                        <outlet property="passenger5TextField" destination="281" id="name-outlet-281"/>
+                        <outlet property="passenger6TextField" destination="282" id="name-outlet-282"/>
+                        <outlet property="passenger7TextField" destination="283" id="name-outlet-283"/>
+                        <outlet property="passenger8TextField" destination="284" id="name-outlet-284"/>
+                        <outlet property="passenger9TextField" destination="292" id="name-outlet-292"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="166" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-510" y="529"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1191">
+            <objects>
+                <viewController storyboardIdentifier="TableController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1192" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1189"/>
+                        <viewControllerLayoutGuide type="bottom" id="1190"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1193">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" restorationIdentifier="FlightTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1196">
+                                <rect key="frame" x="31" y="139" width="529" height="441"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_id" rowHeight="115" id="1197" customClass="FlightCell">
+                                        <rect key="frame" x="0.0" y="28" width="529" height="115"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1197" id="1198">
+                                            <rect key="frame" x="0.0" y="0.0" width="529" height="114.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DateOutLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="104975">
+                                                    <rect key="frame" x="15" y="30" width="267" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PilotLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="104979">
+                                                    <rect key="frame" x="15" y="56" width="282" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DestinationLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="104983">
+                                                    <rect key="frame" x="15" y="84" width="282" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="104975" firstAttribute="top" secondItem="1198" secondAttribute="top" constant="30" id="104978"/>
+                                                <constraint firstItem="104979" firstAttribute="top" secondItem="1198" secondAttribute="top" constant="56" id="104980"/>
+                                                <constraint firstAttribute="trailing" secondItem="104979" secondAttribute="trailing" constant="15" id="104981"/>
+                                                <constraint firstItem="104979" firstAttribute="leading" secondItem="1198" secondAttribute="leading" constant="15" id="104982"/>
+                                                <constraint firstItem="104983" firstAttribute="top" secondItem="1198" secondAttribute="top" constant="84" id="104984"/>
+                                                <constraint firstItem="104983" firstAttribute="leading" secondItem="1198" secondAttribute="leading" constant="15" id="104985"/>
+                                                <constraint firstAttribute="trailing" secondItem="104983" secondAttribute="trailing" constant="15" id="104986"/>
+                                                <constraint firstAttribute="trailing" secondItem="104975" secondAttribute="trailing" constant="30" id="C6s-Ds-KTS"/>
+                                                <constraint firstItem="104975" firstAttribute="leading" secondItem="1198" secondAttribute="leading" constant="15" id="twq-Zm-Qdq"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="104975"/>
+                                                    <exclude reference="104979"/>
+                                                    <exclude reference="104983"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="104978"/>
+                                                    <exclude reference="104980"/>
+                                                    <exclude reference="104981"/>
+                                                    <exclude reference="104982"/>
+                                                    <exclude reference="104984"/>
+                                                    <exclude reference="104985"/>
+                                                    <exclude reference="104986"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="104975"/>
+                                                    <include reference="104979"/>
+                                                    <include reference="104983"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="104978"/>
+                                                    <include reference="104980"/>
+                                                    <include reference="104981"/>
+                                                    <include reference="104982"/>
+                                                    <include reference="104984"/>
+                                                    <include reference="104985"/>
+                                                    <include reference="104986"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="DateOutLabel" destination="104975" id="name-outlet-104975"/>
+                                            <outlet property="DestinationLabel" destination="104983" id="name-outlet-104983"/>
+                                            <outlet property="PilotLabel" destination="104979" id="name-outlet-104979"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1223">
+                                <rect key="frame" x="31" y="20" width="529" height="44"/>
+                                <items>
+                                    <navigationItem id="1224">
+                                        <barButtonItem key="leftBarButtonItem" title="Settings" id="1807">
+                                            <connections>
+                                                <segue destination="1811" kind="show" id="1889"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Add Card" id="1225">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="96904"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" id="205527" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="31" y="72" width="529" height="44"/>
+                                <items>
+                                    <navigationItem id="205528">
+                                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="205532" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Start Date">
+                                            <rect key="frame" x="0.0" y="0.0" width="209" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1223" secondAttribute="trailing" constant="20" id="40643"/>
+                            <constraint firstItem="1223" firstAttribute="leading" secondItem="1193" secondAttribute="leadingMargin" constant="11" id="40644"/>
+                            <constraint firstItem="1223" firstAttribute="top" secondItem="1189" secondAttribute="bottom" id="40645"/>
+                            <constraint firstItem="1196" firstAttribute="leading" secondItem="1193" secondAttribute="leadingMargin" constant="11" id="42183"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1196" secondAttribute="trailing" constant="20" id="42184"/>
+                            <constraint firstItem="1190" firstAttribute="top" secondItem="1196" secondAttribute="bottom" constant="20" id="42186"/>
+                            <constraint id="205526" firstItem="1196" firstAttribute="top" secondItem="1189" secondAttribute="bottom" constant="119"/>
+                            <constraint id="205529" firstItem="205527" firstAttribute="top" secondItem="1189" secondAttribute="bottom" constant="52"/>
+                            <constraint id="205530" firstItem="205527" firstAttribute="leading" secondItem="1193" secondAttribute="leadingMargin" constant="11"/>
+                            <constraint id="205531" firstItem="1193" firstAttribute="trailingMargin" secondItem="205527" secondAttribute="trailing" constant="20"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="FlightTableView" destination="1196" id="name-outlet-1196"/>
+                        <outlet property="NavBar1" destination="1223" id="name-outlet-1223"/>
+                        <outlet property="SettingsButton" destination="1807" id="name-outlet-1807"/>
+                        <outlet property="StartRangeTextField" destination="205532" id="name-outlet-205532"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1194" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1284" y="-926.087"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="1810">
+            <objects>
+                <viewController storyboardIdentifier="SettingsView" id="1811" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1808"/>
+                        <viewControllerLayoutGuide type="bottom" id="1809"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1812">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pilot Settings:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1857">
+                                <rect key="frame" x="48" y="89" width="503" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1914">
+                                <rect key="frame" x="48" y="118" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="53843"/>
+                                </constraints>
+                                <state key="normal" title="Add:">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="AddPilotButton_TouchUpInside:" destination="1811" eventType="touchUpInside" id="2149"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1915">
+                                <rect key="frame" x="52" y="167" width="49" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="122096"/>
+                                </constraints>
+                                <state key="normal" title="Delete:">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="DeletePilotButton_TouchUpInside:" destination="1811" eventType="touchUpInside" id="2176"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1976">
+                                <rect key="frame" x="44" y="20" width="517" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="118785"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Settings" id="1977">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="1978">
+                                            <connections>
+                                                <segue destination="1192" kind="show" id="2061"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter new pilot to add" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2065">
+                                <rect key="frame" x="149" y="118" width="416" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="119129"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select pilot to delete" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2081">
+                                <rect key="frame" x="149" y="167" width="422" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="119128"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plane Settings:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2094">
+                                <rect key="frame" x="48" y="227" width="317" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="119803"/>
+                                    <constraint firstAttribute="width" constant="317" id="119804"/>
+                                    <constraint firstAttribute="width" constant="317" id="122108"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="119803"/>
+                                        <exclude reference="119804"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="119803"/>
+                                        <include reference="119804"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2099">
+                                <rect key="frame" x="44" y="261" width="98" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="119799"/>
+                                    <constraint firstAttribute="width" constant="98" id="119800"/>
+                                    <constraint firstAttribute="width" constant="98" id="122111"/>
+                                </constraints>
+                                <state key="normal" title="Add:">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="119799"/>
+                                        <exclude reference="119800"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="119799"/>
+                                        <include reference="119800"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="AddPlaneButton_TouchUpInside:" destination="1811" eventType="touchUpInside" id="2184"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter new plane to add" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2102">
+                                <rect key="frame" x="154" y="261" width="417" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="120157"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2111">
+                                <rect key="frame" x="44" y="306" width="89" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="120523"/>
+                                    <constraint firstAttribute="width" constant="89" id="122114"/>
+                                </constraints>
+                                <state key="normal" title="Delete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="120523"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="120523"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="DeletePlaneButton_TouchUpInside:" destination="1811" eventType="touchUpInside" id="2116"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select plane to delete" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2115">
+                                <rect key="frame" x="152" y="306" width="422" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lease Settings:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2121">
+                                <rect key="frame" x="52" y="352" width="282" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="120498"/>
+                                    <constraint firstAttribute="width" constant="282" id="122099"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="120498"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="120498"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2122">
+                                <rect key="frame" x="52" y="393" width="81" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="120502"/>
+                                    <constraint firstAttribute="width" constant="81" id="122117"/>
+                                </constraints>
+                                <state key="normal" title="Add:">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="120502"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="120502"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="AddButtonLease_TouchUpInside:" destination="1811" eventType="touchUpInside" id="2174"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2128">
+                                <rect key="frame" x="61" y="431" width="72" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="120514"/>
+                                    <constraint firstAttribute="width" constant="72" id="122120"/>
+                                </constraints>
+                                <state key="normal" title="Delete:">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="120514"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="120514"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="DeleteButtonLease_TouchUpInside:" destination="1811" eventType="touchUpInside" id="2177"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter new lease to add" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2133">
+                                <rect key="frame" x="155" y="393.5" width="416" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="120503"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="120503"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="120503"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select lease to delete" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2137">
+                                <rect key="frame" x="155" y="431.5" width="416" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="120518"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="120518"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="120518"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="173442">
+                                <rect key="frame" x="61" y="484.5" width="167" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="174103"/>
+                                </constraints>
+                                <state key="normal" title="BatchPrint:">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="BatchPrintButton_TouchUpInside:" destination="1811" eventType="touchUpInside" id="173443"/>
+                                    <segue destination="172755" kind="show" id="175610"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1857" firstAttribute="leading" secondItem="1812" secondAttribute="leading" constant="48" id="52261"/>
+                            <constraint firstItem="1857" firstAttribute="top" secondItem="1812" secondAttribute="top" constant="89" id="52262"/>
+                            <constraint firstItem="2065" firstAttribute="top" secondItem="1812" secondAttribute="top" constant="118" id="53845"/>
+                            <constraint firstItem="1914" firstAttribute="leading" secondItem="1812" secondAttribute="leadingMargin" constant="28" id="55454"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2065" secondAttribute="trailing" constant="15" id="55455"/>
+                            <constraint firstItem="2065" firstAttribute="leading" secondItem="1914" secondAttribute="trailing" constant="55" id="57063"/>
+                            <constraint firstItem="1914" firstAttribute="top" secondItem="1808" secondAttribute="bottom" constant="98" id="57064"/>
+                            <constraint firstItem="2081" firstAttribute="top" secondItem="1812" secondAttribute="top" constant="167" id="57950"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2081" secondAttribute="trailing" constant="9" id="57964"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2115" secondAttribute="trailing" constant="6" id="117252"/>
+                            <constraint firstItem="2115" firstAttribute="leading" secondItem="1812" secondAttribute="leadingMargin" constant="132" id="117254"/>
+                            <constraint firstItem="1976" firstAttribute="top" secondItem="1808" secondAttribute="bottom" id="118782"/>
+                            <constraint firstItem="1976" firstAttribute="leading" secondItem="1812" secondAttribute="leadingMargin" constant="24" id="118783"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1976" secondAttribute="trailing" constant="19" id="118784"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1857" secondAttribute="trailing" constant="29" id="119120"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2081" secondAttribute="trailing" constant="9" id="119121"/>
+                            <constraint firstItem="2081" firstAttribute="leading" secondItem="1812" secondAttribute="leadingMargin" constant="129" id="119122"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2102" secondAttribute="trailing" constant="9" id="120154"/>
+                            <constraint firstItem="2102" firstAttribute="leading" secondItem="1812" secondAttribute="leadingMargin" constant="134" id="120155"/>
+                            <constraint firstItem="2102" firstAttribute="top" secondItem="1808" secondAttribute="bottom" constant="241" id="120156"/>
+                            <constraint firstItem="2121" firstAttribute="leading" secondItem="1812" secondAttribute="leading" constant="52" id="122097"/>
+                            <constraint firstItem="1915" firstAttribute="leading" secondItem="1812" secondAttribute="leading" constant="52" id="122104"/>
+                            <constraint firstItem="1915" firstAttribute="top" secondItem="1812" secondAttribute="top" constant="167" id="122105"/>
+                            <constraint firstItem="2094" firstAttribute="leading" secondItem="1812" secondAttribute="leading" constant="48" id="122106"/>
+                            <constraint firstItem="2099" firstAttribute="top" secondItem="1812" secondAttribute="top" constant="261" id="122110"/>
+                            <constraint firstItem="2122" firstAttribute="leading" secondItem="1812" secondAttribute="leading" constant="52" id="122115"/>
+                            <constraint firstItem="2128" firstAttribute="leading" secondItem="1812" secondAttribute="leading" constant="61" id="122118"/>
+                            <constraint firstItem="2099" firstAttribute="leading" secondItem="1812" secondAttribute="leadingMargin" constant="24" id="124189"/>
+                            <constraint firstItem="2111" firstAttribute="leading" secondItem="1812" secondAttribute="leadingMargin" constant="24" id="124190"/>
+                            <constraint firstItem="2094" firstAttribute="top" secondItem="2081" secondAttribute="bottom" constant="30" id="124191"/>
+                            <constraint firstItem="2133" firstAttribute="leading" secondItem="1812" secondAttribute="leadingMargin" constant="135" id="124192"/>
+                            <constraint firstItem="2137" firstAttribute="leading" secondItem="1812" secondAttribute="leadingMargin" constant="135" id="124193"/>
+                            <constraint firstItem="2111" firstAttribute="top" secondItem="2099" secondAttribute="bottom" constant="15" id="125751"/>
+                            <constraint firstItem="2115" firstAttribute="top" secondItem="2102" secondAttribute="bottom" constant="15" id="125752"/>
+                            <constraint firstItem="2121" firstAttribute="top" secondItem="2111" secondAttribute="bottom" constant="16" id="126611"/>
+                            <constraint firstItem="2122" firstAttribute="top" secondItem="2121" secondAttribute="bottom" constant="21" id="126612"/>
+                            <constraint firstItem="2133" firstAttribute="top" secondItem="2121" secondAttribute="bottom" constant="21" id="126613"/>
+                            <constraint firstItem="2128" firstAttribute="top" secondItem="2122" secondAttribute="bottom" constant="8" id="126614"/>
+                            <constraint firstItem="2137" firstAttribute="top" secondItem="2133" secondAttribute="bottom" constant="8" id="126615"/>
+                            <constraint firstItem="2128" firstAttribute="top" secondItem="2122" secondAttribute="bottom" constant="8" id="126616"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2133" secondAttribute="trailing" constant="9" id="128690"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2137" secondAttribute="trailing" constant="9" id="128691"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2137" secondAttribute="trailing" constant="9" id="128692"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2133" secondAttribute="trailing" constant="9" id="128693"/>
+                            <constraint firstItem="173442" firstAttribute="leading" secondItem="1812" secondAttribute="leadingMargin" constant="41" id="174101"/>
+                            <constraint firstItem="173442" firstAttribute="top" secondItem="2137" secondAttribute="bottom" constant="23" id="174102"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AddButtonLease" destination="2122" id="name-outlet-2122"/>
+                        <outlet property="AddLeaseTextField" destination="2133" id="name-outlet-2133"/>
+                        <outlet property="AddPilotButton" destination="1914" id="name-outlet-1914"/>
+                        <outlet property="AddPilotTextField" destination="2065" id="name-outlet-2065"/>
+                        <outlet property="AddPlaneButton" destination="2099" id="name-outlet-2099"/>
+                        <outlet property="AddPlaneTextField" destination="2102" id="name-outlet-2102"/>
+                        <outlet property="BatchPrintButton" destination="173442" id="name-outlet-173442"/>
+                        <outlet property="DeleteButtonLease" destination="2128" id="name-outlet-2128"/>
+                        <outlet property="DeleteLeaseTextField" destination="2137" id="name-outlet-2137"/>
+                        <outlet property="DeletePilotButton" destination="1915" id="name-outlet-1915"/>
+                        <outlet property="DeletePilotTextField" destination="2081" id="name-outlet-2081"/>
+                        <outlet property="DeletePlaneButton" destination="2111" id="name-outlet-2111"/>
+                        <outlet property="DeletePlaneTextField" destination="2115" id="name-outlet-2115"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1813" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1823" y="18"/>
+        </scene>
+        <!--Batch Email View Controller-->
+        <scene sceneID="172754">
+            <objects>
+                <viewController storyboardIdentifier="Batch" id="172755" customClass="BatchEmailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="172752"/>
+                        <viewControllerLayoutGuide type="bottom" id="172753"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="172756">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batch Email Range " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="172759">
+                                <rect key="frame" x="37" y="80" width="533" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="533" id="172762"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="172771">
+                                <rect key="frame" x="82" y="160" width="434" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="196455" firstItem="172771" firstAttribute="width" constant="434"/>
+                                </constraints>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="174767">
+                                <rect key="frame" x="82" y="223" width="434" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="191313">
+                                <rect key="frame" x="250" y="297" width="106" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="192639"/>
+                                    <constraint firstAttribute="height" constant="30" id="192640"/>
+                                </constraints>
+                                <state key="normal" title="Email Batch:">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="EmailBatchButton_TouchUpInside:" destination="172755" eventType="touchUpInside" id="193303"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="194402">
+                                <rect key="frame" x="261.5" y="341" width="79" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="79" id="194404"/>
+                                    <constraint firstAttribute="height" constant="30" id="194405"/>
+                                </constraints>
+                                <state key="normal" title="Cancel:">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1192" kind="show" id="195102"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="172759" firstAttribute="leading" secondItem="172756" secondAttribute="leadingMargin" constant="17" id="172760"/>
+                            <constraint firstItem="172759" firstAttribute="top" secondItem="172752" secondAttribute="bottom" constant="60" id="172761"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="172759" secondAttribute="trailing" constant="10" id="176716"/>
+                            <constraint firstItem="172771" firstAttribute="top" secondItem="172756" secondAttribute="top" constant="160" id="185688"/>
+                            <constraint firstItem="174767" firstAttribute="top" secondItem="172756" secondAttribute="top" constant="223" id="185691"/>
+                            <constraint firstItem="191313" firstAttribute="centerX" secondItem="172756" secondAttribute="centerX" constant="3" id="192638"/>
+                            <constraint firstItem="191313" firstAttribute="top" secondItem="172752" secondAttribute="bottom" constant="277" id="192641"/>
+                            <constraint firstItem="194402" firstAttribute="centerX" secondItem="172756" secondAttribute="centerX" constant="1" id="194403"/>
+                            <constraint firstItem="194402" firstAttribute="top" secondItem="172752" secondAttribute="bottom" constant="321" id="194406"/>
+                            <constraint id="196454" firstItem="172756" firstAttribute="trailingMargin" secondItem="172771" secondAttribute="trailing" constant="64"/>
+                            <constraint id="196456" firstItem="172756" firstAttribute="centerX" secondItem="172771" secondAttribute="centerX" constant="1"/>
+                            <constraint id="197130" firstItem="174767" firstAttribute="leading" secondItem="172756" secondAttribute="leadingMargin" constant="62"/>
+                            <constraint id="197131" firstItem="172756" firstAttribute="trailingMargin" secondItem="174767" secondAttribute="trailing" constant="64"/>
+                            <constraint id="197132" firstItem="172756" firstAttribute="centerX" secondItem="174767" secondAttribute="centerX" constant="1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CancelButton" destination="194402" id="name-outlet-194402"/>
+                        <outlet property="EmailBatchButton" destination="191313" id="name-outlet-191313"/>
+                        <outlet property="EndDateTextField" destination="174767" id="name-outlet-174767"/>
+                        <outlet property="RangeTitleLabel" destination="172759" id="name-outlet-172759"/>
+                        <outlet property="StartDateTextField" destination="172771" id="name-outlet-172771"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="172757" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-345" y="-1013"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2061"/>
+        <segue reference="96904"/>
+    </inferredMetricsTieBreakers>
+</document>
