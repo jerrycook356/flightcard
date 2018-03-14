@@ -9,6 +9,7 @@ using System.Globalization;
 
 namespace practice2
 {
+
     public partial class ViewController3 : UIViewController
     {
         DataManip dm = new DataManip();

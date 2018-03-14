@@ -4,6 +4,9 @@ using UIKit;
 
 namespace practice2
 {
+
+    //flightcell
+
     public partial class FlightCell : UITableViewCell
     {
         public FlightCell (IntPtr handle) : base (handle)

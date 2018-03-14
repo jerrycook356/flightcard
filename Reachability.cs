@@ -4,6 +4,7 @@ using System.Net;
 using SystemConfiguration;
 
 using CoreFoundation;
+//reachability
 
 namespace practice2
 {

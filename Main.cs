@@ -2,6 +2,8 @@
 
 namespace practice2
 {
+    //main cs
+
     public class Application
     {
         // This is the main entry point of the application.

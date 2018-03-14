@@ -1,6 +1,8 @@
 ﻿using System;
 namespace practice2
 {
+    //pilot class
+
     public class Pilot
     {
         public string pilotName { get; set; }

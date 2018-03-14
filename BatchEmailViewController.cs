@@ -7,6 +7,9 @@ using System.Collections.Generic;
 
 namespace practice2
 {
+
+    //batchEmailViewController
+
     public partial class BatchEmailViewController : UIViewController
     {
         DataManip dm = new DataManip();

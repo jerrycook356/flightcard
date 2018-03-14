@@ -1,6 +1,8 @@
 ﻿using System;
 namespace practice2
 {
+    //lease class 
+
     public class Lease
     {
         public string name { get; set; }

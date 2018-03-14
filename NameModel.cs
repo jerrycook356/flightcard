@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UIKit;
 namespace practice2
 {
+    //name model
+
     public class NameModel : UIPickerViewModel
     {
         List<string> items;

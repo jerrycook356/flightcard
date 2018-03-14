@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlTypes;
-
+//transfer in card
 namespace practice2
 {
     public class TransferInCard
