@@ -1149,6 +1149,12 @@ namespace practice2
                 localPilots.Add(pilot);
             }
             remotePilots = ws.getPilots();
+            if(remotePilots.Count() == 0 ){
+                foreach(var pilot in localPilots){
+                    ws.addPilot(pilot);
+                }
+                
+            }
             foreach (var pilot in remotePilots)
             {
                 if (!localPilots.Contains(pilot))
@@ -1188,7 +1194,11 @@ namespace practice2
                 localPlanes.Add(plane);
             }
             remotePlanes = ws.getPlanes();
-           
+            if(remotePlanes.Count()==0 ){
+                foreach(var plane in localPlanes){
+                    ws.addPlane(plane);
+                }
+            }
 
             foreach (var plane in remotePlanes)
             {
@@ -1226,6 +1236,11 @@ namespace practice2
                 localLease.Add(lease);
             }
             remoteLease = ws.getLeases();
+            if(remoteLease.Count()==0 ){
+                foreach(var lease in localLease){
+                    ws.addLease(lease);
+                }
+            }
             foreach (var lease in remoteLease)
             {
                 if (!localLease.Contains(lease))

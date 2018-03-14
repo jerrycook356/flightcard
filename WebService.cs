@@ -163,7 +163,7 @@ namespace practice2
             }
 
         }
-        //delte pilot from remote database
+        //delete pilot from remote database
         public async void deletePilot(Pilot pilot)
         {
 
