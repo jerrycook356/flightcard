@@ -96,7 +96,7 @@ namespace practice2
             {
                 card = DataManip.GetEditCard();
                 DataManip.clearPassengerList();
-                var dateOut = card.dateOut.ToString();
+                var dateOut = card.dateOut.ToString("MM/dd/yyyy");
                 var dateIn = card.dateIn;
                 dateIn = card.dateIn.Substring(0, 10);
                 DateOutTextField.Text = dateOut;
